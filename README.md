@@ -1,6 +1,7 @@
 # minima
 
 Basic theme: [minima](https://jekyll.github.io/minima/)
+
 Fork from: [sunbjt/sunbjt.github.io: blog](https://github.com/sunbjt/sunbjt.github.io)
 
 ## 本地依赖环境搭建

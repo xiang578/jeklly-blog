@@ -8,9 +8,9 @@ type: post
 published: true
 ---
 
-[TOC]
+{:TOC}
 
-$$F=Wx$$
+test $$F=Wx$$ test
 
 ${F=Wx}$
 

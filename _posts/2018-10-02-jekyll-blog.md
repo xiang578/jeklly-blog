@@ -8,7 +8,7 @@ published: true
 ---
 
 
-{:toc}
+[toc]
 
 ## 起
 

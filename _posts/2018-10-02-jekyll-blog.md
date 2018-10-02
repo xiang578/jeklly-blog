@@ -7,9 +7,6 @@ type: post
 published: true
 ---
 
-
-{:toc}
-
 ## 起
 
 最近几个月，刚刚告别校园。在工作中遇到一些挑战，需要自己去学习一大堆的知识，所以准备在博客上记录一下。不过之前的 hexo 博客原生不支持数学公式，按网上的方法加插件也没有成功。所以直接利用 jekyll 搭建一个新的博客。
@@ -49,7 +46,7 @@ Github repo 原生支持 jeklly 博客，搭建本地环境没有太大的必要
 
 添加 Gitalk 的评论框：
 
-```
+```html
 <div id='gitalk-container'></div>
 <script>
 const gitalk = new Gitalk({
@@ -76,5 +73,11 @@ gitalk.render('gitalk-container')
 
 ![issues](/assets/media/15384488255059.jpg)
 
+### To do
+
+1. 文章的 toc 功能无法使用
+2. 数学公式参考
+3. 阅读数量
+4. 文章的 url 格式
 
 

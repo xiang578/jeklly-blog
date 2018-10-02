@@ -7,7 +7,7 @@ type: post
 published: true
 ---
 
-{:toc}
+{:TOC}
 
 ## 起
 
@@ -55,7 +55,7 @@ const gitalk = new Gitalk({
   repo: 'repo',
   owner: 'owner',
   admin: ['admin'],
-  id: '{{}}',
+  id: '{ {} }',
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 
@@ -63,7 +63,7 @@ gitalk.render('gitalk-container')
 </script>
 ```
 
-其中 clientID 和 clientSecret 由上一步申请 OAuth Apps 时生成，直接复制过来使用。repo 指定将评论相关的 Issues 创建在哪个仓库，一般选择你保存 jeklly 文件的仓库。owner 指定 repo 的主人，一般就是你自己的 Github 用户名。admin 可以初始化文章评论的用户。id 指定是某篇文章的评论在 Issues 中的标题，使用 `page.title` 可以将文章的标题当成是 Issues 的标题。（注：上面的代码中 id 对应的值为 `'{{}}'`，你在复制的时候需要在 `{{}}` 中间添加 `page.title` ，我这样处理是因为将替换后的结果写在文章中，会被 jekyll 渲染成这篇文章的标题而无法正确显示。）
+其中 clientID 和 clientSecret 由上一步申请 OAuth Apps 时生成，直接复制过来使用。repo 指定将评论相关的 Issues 创建在哪个仓库，一般选择你保存 jeklly 文件的仓库。owner 指定 repo 的主人，一般就是你自己的 Github 用户名。admin 可以初始化文章评论的用户。id 指定是某篇文章的评论在 Issues 中的标题，使用 `page.title` 可以将文章的标题当成是 Issues 的标题。（注：上面的代码中 id 对应的值为 `'{ {} }'`，你在复制的时候需要在 `{ {} }` 中间添加 `page.title`，并且删除空格。我这样处理是因为将替换后的结果写在文章中，会被 jekyll 渲染成这篇文章的标题而无法正确显示。）
 
 完成以上这两步，每篇文章下方都会生成一个评论框。
 

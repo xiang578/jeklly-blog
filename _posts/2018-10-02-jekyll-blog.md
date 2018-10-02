@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 利用 jekyll 搭建博客
+category: 公告
 tags:  [jekyll,blog]
 status: publish
 type: post
@@ -33,7 +34,7 @@ Github repo 原生支持 jeklly 博客，搭建本地环境没有太大的必要
 
 ![OAuth Info](/assets/media/15384474502098.jpg)
 
-### 修改 jeklly 
+### 修改 jekyll 
 
 直接修改文章页面的样式，我使用的主题 post 样式保存在 `_layouts/post.html`。
 

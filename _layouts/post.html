@@ -29,6 +29,21 @@ layout: default
   {% endif %}
 </div>
 
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'xiang578',
+    repo: 'jekyll',
+    oauth: {
+        client_id: '715d852140affb6b3868',
+        client_secret: '1a15830e6a7409d906303bd0ad95dc217fb530d6',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+
 {% if site.disqus.shortname %}
   {% include disqus_comments.html %}
 {% endif %}

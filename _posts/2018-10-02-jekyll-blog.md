@@ -30,11 +30,11 @@ Github repo 原生支持 jeklly 博客，搭建本地环境没有太大的必要
 
 登录 Github 后，选择 `Settings - Developer settings - OAuth Apps` ，点击 `New OAuth App`，填写下面这样的表单。除了 `Authorization callback URL` 需要填写你的博客地址，其他都可以随意填写。
 
-![-w775](/assets/media/15384470592888.jpg)
+![New OAuth App](/assets/media/15384470592888.jpg)
 
 点击 `Register application` 后，会生成下图所示的配置文件。其中 `Client ID` 和 `Client Secret` 会在下一步中使用。
 
-![-w763](/assets/media/15384474502098.jpg)
+![OAuth Info](/assets/media/15384474502098.jpg)
 
 ### 修改 jeklly 
 
@@ -70,11 +70,11 @@ gitalk.render('gitalk-container')
 
 完成以上这两步，每篇文章下方都会生成一个评论框。
 
-![-w765](/assets/media/15384487576688.jpg)
+![Gitalk comment](/assets/media/15384487576688.jpg)
 
 对应的 Github repo 的 Issues 中也会有一个 [issue](https://github.com/xiang578/jekyll/issues/2)。
 
-![-w1010](/assets/media/15384488255059.jpg)
+![issues](/assets/media/15384488255059.jpg)
 
 
 

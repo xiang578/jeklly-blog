@@ -49,3 +49,14 @@ plugins:
 
 disqus:
  shortname: 
+
+comments: true
+
+comments:
+  gitalk: true
+  gitalk_clientID: '715d852140affb6b3868'
+  gitalk_Secret: '1a15830e6a7409d906303bd0ad95dc217fb530d6'
+  gitalk_repo: 'jekyll'
+  gitalk_owner: 'xiang578'
+  gitalk_admin: 'xiang578'
+  distractionFreeMode: false

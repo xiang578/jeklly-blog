@@ -29,19 +29,19 @@ layout: default
   {% endif %}
 </div>
 
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<div id='gitalk-container'></div>
 <script>
-var gitment = new Gitment({
-    owner: 'xiang578',
-    repo: 'jekyll',
-    oauth: {
-        client_id: '715d852140affb6b3868',
-        client_secret: '1a15830e6a7409d906303bd0ad95dc217fb530d6',
-    },
-});
-gitment.render('gitmentContainer');
+const gitalk = new Gitalk({
+  clientID: '715d852140affb6b3868',
+  clientSecret: '1a15830e6a7409d906303bd0ad95dc217fb530d6',
+  repo: 'jekyll',
+  owner: 'xiang578',
+  admin: ['xiang578'],
+  id: {{ page.title }},      
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
 </script>
 
 {% if site.disqus.shortname %}
@@ -49,3 +49,5 @@ gitment.render('gitmentContainer');
 {% endif %}
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>

@@ -49,3 +49,5 @@ plugins:
 
 disqus:
  shortname: 
+
+markdown: kramdown

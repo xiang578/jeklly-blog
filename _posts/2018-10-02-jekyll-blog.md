@@ -44,6 +44,7 @@ published: true
 
 添加 Gitalk 的评论框：
 
+```
 <div id='gitalk-container'></div>
 <script>
 const gitalk = new Gitalk({
@@ -58,5 +59,8 @@ const gitalk = new Gitalk({
 
 gitalk.render('gitalk-container')
 </script>
+```
 
 其中 clientID 和 clientSecret 由上一步申请 OAuth Apps 时生成，直接复制过来使用。repo 指定将评论相关的 Issues 创建在哪个仓库，一般选择你保存 jeklly 文件的仓库。owner 指定 repo 的主人，一般就是你自己的 Github 用户名。admin 可以初始化文章评论的用户。id 指定是某篇文章的评论在 Issues 中的标题，使用 '{{ page.title }}' 可以将文章的标题当成是 Issues 的标题。
+
+

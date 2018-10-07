@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 利用 jekyll 搭建博客
-category: 公告
 tags:  [jekyll,blog]
 status: publish
 type: post
